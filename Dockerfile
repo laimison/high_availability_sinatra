@@ -8,6 +8,8 @@ WORKDIR $APP_ROOT
 ADD Gemfile $APP_ROOT/
 RUN bundle install
 
+RUN apt-get update && apt-get install -y nginx
+
 ADD . $APP_ROOT
 
 EXPOSE 4567
