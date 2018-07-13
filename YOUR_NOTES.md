@@ -17,6 +17,9 @@ Yes, it was needed to start new Elastic Beanstalk environment on AWS portal and 
 - Nginx server is placed before this application for caching (it can keep some pages in memory and load quicker) 
 - This Sinatra application switched from TCP/IP to Unix socket (basically, it removes unnecessary network layer so performance is slightly increased)
 
+## Was application amended? ##
+Yes, two lines were added to provide instance name, but this gives perfect understanding and visibility how scaling works.
+
 ## Is there an practical example of this exact task deployed? ##
 Available at [http://scalingsinatra.us-west-2.elasticbeanstalk.com](http://scalingsinatra.us-west-2.elasticbeanstalk.com) until the end of July, 2018
 
