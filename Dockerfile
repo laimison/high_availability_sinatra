@@ -12,5 +12,5 @@ RUN apt-get update && apt-get install -y nginx
 
 ADD . $APP_ROOT
 
-EXPOSE 4567
-CMD ["bundle", "exec", "puma", "-b", "tcp://0.0.0.0:4567", "-t", "0:3"]
+EXPOSE 80 4567
+CMD /etc/init.d/nginx start && bundle exec puma -b tcp://0.0.0.0:4567 -t "0:3"
