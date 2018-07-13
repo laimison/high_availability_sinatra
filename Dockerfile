@@ -12,5 +12,6 @@ RUN apt-get update && apt-get install -y nginx
 
 ADD . $APP_ROOT
 
-EXPOSE 80 4567
-CMD /etc/init.d/nginx start && bundle exec puma -b tcp://0.0.0.0:4567 -t "0:3"
+EXPOSE 80
+# Nginx caching server in front and Unix socket to bypass unnecessary TCP/IP (page still can be reached internally with curl --unix-socket /tmp/sinatra.sock http://localhost or using socat command to translate to TCP for tests)
+CMD /etc/init.d/nginx start && bundle exec puma -b unix:///tmp/sinatra.sock -t "0:3"
