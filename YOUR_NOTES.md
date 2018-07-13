@@ -1,6 +1,6 @@
-** The plan for auto-scaling the app **
+## The plan for auto-scaling the app ##
 
-* Tasks *
+# Tasks #
 - understand the app
 - choose tools for scaling
 - come up with a plan to configure auto-scaling when traffic increases the response times of the app remain stable
