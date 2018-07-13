@@ -8,7 +8,11 @@
 - user friendly documentation
 
 ## Tools chosen to scale application ##
-The task was successfully done using Amazon Cloud Services in AWS Elastic Beanstalk environment. 
+The task was successfully done using Amazon Cloud Services in AWS Elastic Beanstalk environment. The app runs inside Docker container.
+
+## Why this solution was chosen? ##
+AWS is one of the best way to scale the application. They provide all the tools that are require for small and even extremely big application. I have chosen Elastic Beanstalk, because it can simply create scaled environment from zip. It can be fully customised by writing scripts.
+Also, it comes with some libraries in place depending on application programming language and whether Docker needed or not.
 
 ## Are there any steps done outside of these scripts in zip? ##
 Yes, it was needed to start new Elastic Beanstalk environment on AWS portal and choose "Web server" environment, "High availability" settings, SSD disk space in GB, SSH key to have the access to instances, configure scaling parameters, change load balancer port, add firewall rule by using Security Groups, use "eb" command line to deploy the code and some debugging until app and provided scripts worked as expected.
@@ -18,7 +22,7 @@ Yes, it was needed to start new Elastic Beanstalk environment on AWS portal and 
 - This Sinatra application switched from TCP/IP to Unix socket (basically, it removes unnecessary network layer so performance is slightly increased)
 
 ## Was application amended? ##
-Yes, two lines were added to provide instance name, but this gives perfect understanding and visibility how scaling works.
+Yes, two lines were added to provide instance name, but this gives perfect visibility how scaling works.
 
 ## Is there an practical example of this exact task deployed? ##
 Available at [http://scalingsinatra.us-west-2.elasticbeanstalk.com](http://scalingsinatra.us-west-2.elasticbeanstalk.com) until the end of July, 2018
