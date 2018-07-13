@@ -8,4 +8,5 @@
     {
       "ContainerPort": "4567"
     }
+  ]
 }
