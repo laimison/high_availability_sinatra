@@ -1,11 +1,11 @@
 # The plan for auto-scaling the app #
 
 ## Tasks ##
-- understand the app
-- choose tools for scaling
-- come up with a plan to configure auto-scaling when traffic increases the response times of the app remain stable
-- explain how your plan will ensure consistent response times in response to increase / decrease in traffic to the app.
-- user friendly documentation
+- Understand the app
+- Choose tools for scaling
+- Come up with a plan to configure auto-scaling when traffic increases the response times of the app remain stable
+- Explain how your plan will ensure consistent response times in response to increase / decrease in traffic to the app.
+- User friendly documentation
 
 ## Tools chosen to scale application ##
 The task was successfully done using Amazon Cloud Services in AWS Elastic Beanstalk environment. The app runs inside Docker container.
