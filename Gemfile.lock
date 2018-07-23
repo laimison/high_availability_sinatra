@@ -1,7 +1,12 @@
+GIT
+  remote: git://github.com/puma/puma.git
+  revision: b9a499d4c8542bfdc951d43e33e979a587a2878a
+  specs:
+    puma (3.12.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
-    puma (3.11.4)
     rack (1.6.10)
     rack-protection (1.5.5)
       rack
@@ -15,7 +20,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  puma
+  puma!
+  rack (= 1.6.10)
   sinatra
 
 BUNDLED WITH
