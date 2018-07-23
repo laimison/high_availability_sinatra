@@ -8,5 +8,7 @@
     {
       "ContainerPort": "4567"
     }
+  ],
+  "Volumes": [
   ]
 }
