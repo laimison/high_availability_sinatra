@@ -1,4 +1,4 @@
-FROM ruby
+FROM ruby:2.3
 
 ENV APP_ROOT /var/www/app
 
