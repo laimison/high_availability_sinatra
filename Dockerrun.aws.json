@@ -6,7 +6,7 @@
   },
   "Ports": [
     {
-      "ContainerPort": "4567"
+      "ContainerPort": "1234"
     }
   ],
   "Volumes": [

@@ -18,4 +18,4 @@ RUN rm /etc/nginx/sites-enabled/default && ln -fns /etc/nginx/sites-available/my
 
 EXPOSE 4567
 # Nginx caching server in front and Unix socket to bypass unnecessary TCP/IP (page still can be reached internally with curl --unix-socket /tmp/sinatra.sock http://localhost or using socat command to translate to TCP for tests)
-CMD (/etc/init.d/nginx restart || true) && (bundle exec puma -b unix:///tmp/sinatra.sock -t "0:3" || true)
+CMD /etc/init.d/nginx start && bundle exec puma -b unix:///tmp/sinatra.sock -t "0:3"
