@@ -10,5 +10,9 @@
     }
   ],
   "Volumes": [
+    {
+      "HostDirectory": "/var/app/current",
+      "ContainerDirectory": "/var/sinatra"
+    }
   ]
 }
