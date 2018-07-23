@@ -1,3 +1,4 @@
+# Previous commit was successful so not sure whether :2.3 is needed (I added this because had an weird issue with bundler so looked for stable image)
 FROM ruby:2.3
 
 ENV APP_ROOT /var/www/app
